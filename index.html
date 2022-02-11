@@ -8,39 +8,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1 id="title">Pokegroup Survey Form</h1>
-      <p id="description">
-        Thank you for taking the time to help us improve the platform
-      </p>
-    </header>
-    <div>
+    <img
+      src="https://images.unsplash.com/photo-1627856013061-3da1dc64469e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+      class="bgimage"
+    />
+    <div class="content">
+      <header>
+        <h1 id="title">Pokegroup Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+
       <form id="survey-form">
-        <label id="name-label" for="name">Name</label>
+        <label id="name-label" for="name">Name</label><br />
         <input
           type="text"
           id="name"
           name="name"
           placeholder="Enter your name"
           required
-        />
-        <label id="email-label" for="email">Email</label>
+        /><br />
+        <label id="email-label" for="email">Email</label><br />
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Enter your Email"
           required
-        />
-        <label id="number-label" for="age">Age (optional)</label>
+        /><br />
+        <label id="number-label" for="age">Age (optional)</label><br />
         <input
           type="number"
-          id="age"
+          id="number"
           name="age"
           placeholder="Age"
           min="10"
           max="60"
-        />
+        /><br />
         <label for="dropdown">Select your favorite starter pokemon</label><br />
         <select name="dropdown" id="dropdown">
           <option value="" disabled selected>select your starter</option>
@@ -50,48 +55,49 @@
         </select>
 
         <p id="radio">Favorite type:</p>
-        <input type="radio" name="fav-type" id="water" />
-        <label for="water">Water</label>
-        <input type="radio" name="fav-type" id="fire" />
-        <label for="fire">Fire</label>
-        <input type="radio" name="fav-type" id="plant" />
-        <label for="plant">Plant</label>
+        <input type="radio" name="fav-type" id="water" value="water" />
+        <label for="water">Water</label><br />
+        <input type="radio" name="fav-type" id="fire" value="fire" />
+        <label for="fire">Fire</label><br />
+        <input type="radio" name="fav-type" id="plant" value="plant" />
+        <label for="plant">Plant</label><br />
 
         <p id="checkbox">What do you usually buy in the shop?</p>
 
         <input type="checkbox" name="potion" id="potion" value="potion" />
-        <label for="potion">Potion</label>
+        <label for="potion">Potion</label><br />
         <input type="checkbox" name="repelent" id="repelent" value="repelent" />
-        <label for="repelent">Repelent</label>
+        <label for="repelent">Repelent</label><br />
         <input type="checkbox" name="pokeball" id="pokeball" value="pokeball" />
-        <label for="pokeball">Pokeball</label>
+        <label for="pokeball">Pokeball</label><br />
         <input type="checkbox" name="doll" id="doll" value="doll" />
-        <label for="doll">Doll</label>
+        <label for="doll">Doll</label><br />
 
         <input type="checkbox" name="antidote" id="antidote" value="antidote" />
-        <label for="antidote">Antidote</label>
+        <label for="antidote">Antidote</label><br />
         <input
           type="checkbox"
           name="awakening"
           id="awakening"
           value="awakening"
         />
-        <label for="awakening">Awekening</label>
+        <label for="awakening">Awekening</label><br />
         <input type="checkbox" name="magikarp" id="magikarp" value="magikarp" />
-        <label for="magikarp">Magikarp</label>
+        <label for="magikarp">Magikarp</label><br />
         <input
           type="checkbox"
           name="escape-rope"
           id="escape-rope"
           value="escape-rope"
         />
-        <label for="escape-rope">Escape rope</label>
+        <label for="escape-rope">Escape rope</label><br />
 
         <p id="comments">Why do you love pokemon games?</p>
         <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-
-        <input type="submit" />
+        <br />
+        <input type="submit" name="submit" id="submit" />
       </form>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
